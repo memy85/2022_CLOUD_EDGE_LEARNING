@@ -1,12 +1,4 @@
-# Vertical Cloud Edge Learning
-
-![ex_screenshot](figure/vertical_cloud_edge.png)
-
-
-./split/split_model.py : src for vertical cloud-edge learnig
-
 # Create synthetic data-set for a simple simulation
-
 
 ## Edge dataset
 
