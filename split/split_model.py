@@ -7,6 +7,9 @@ import numpy as np
 import math
 
 class BottomNetwork(object):
+    '''
+    bottom cloud에서의 뉴런
+    '''
     def __init__(self, config):
         self.task: str = config['task']
         self.bottom_input_size: int = config['bottom_input_size']
@@ -40,6 +43,9 @@ class BottomNetwork(object):
         return self.bottom_weights_grads
 
 class TopNetwork(object):
+    '''
+    top 네트워크는 client 상황
+    '''
     def __init__(self, config):
         self.task: str = config['task']
         self.top_input_size: int = config['top_input_size']
@@ -98,9 +104,9 @@ if __name__ == "__main__":
     #     PROJECT_PATH = Path(__file__).parents[1]
     # except NameError:
     #     PROJECT_PATH = Path('.').absolute().parents[1]
-    PROJECT_PATH = '/Users/taehyun/PycharmProjects/vertical_cloud_edge_learning/'
+    
+    PROJECT_PATH = '/home/wonseok/2021_edge_cloud_learning/'
     DATA_PATH = Path(PROJECT_PATH, 'data', 'raw')
-    PROJECT_PATH = '/Users/taehyun/PycharmProjects/vertical_cloud_edge_learning/'
     HISTORY_PATH = Path(PROJECT_PATH, 'history')
     FIGURE_PATH = Path(PROJECT_PATH, 'figure')
     sys.path.append(PROJECT_PATH)
