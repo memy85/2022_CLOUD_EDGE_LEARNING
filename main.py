@@ -1,17 +1,21 @@
-# coding=utf-8
-# This is a sample Python script.
+# ----------------------------------------------  Server Script
 
-# Press ⌥⇧R to execute it or replace it with your code_.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from pathlib import Path
+import os, sys
+
+PROJECT_DIR = ''
+os.sys.path.append(PROJECT_DIR)
+
+from cloud2edge.manager import manager
+from cloud2edge.communication import communicator, sender, receiver, config
+from cloud2edge.aggregator import aggregator
+from cloud2edge.models.server import server
+
+# set preconditions
 
 
-def print_hi(name):
-    # Use a breakpoint in the code_ line below to debug your script.
-    print("Hi, {0}".format(name))  # Press ⌃' to toggle the breakpoint.
+# ----------------------------------------------  Client Script
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    communicator
