@@ -1,3 +1,5 @@
+from socket import socket
+
 
 
 class Sender:
